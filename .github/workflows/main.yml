@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - name : 'testing Githup'
-        run : pwd
+      - uses: actions/checkout@v3
+      - name: "login to Docker hub"
+        run: docker login --username areej10 --password dckr_pat_4ZfxMKE3yx7ROvQqoMURz-H28yU
 
+     
